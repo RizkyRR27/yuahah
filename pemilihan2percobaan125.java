@@ -6,11 +6,15 @@ public class pemilihan2percobaan125 {
         System.out.println("Masukan tahun");
 int tahun = input25.nextInt();
 
+String hasil = "bukan tahun Kabsiat";
         if ((tahun % 4) == 0) {
             if ((tahun % 100) != 0)
-            System.out.println("Tahun Kabsiat");
-        else 
-System.out.println("Bukan Tahun Kabsiat");
+            hasil = "Tahun Kabsiat";
+        else {
+            if ((tahun % 400) == 0)
+hasil = "Tahun kabsiat";
+System.out.println(hasil);
+        }
         }
     }
 }
